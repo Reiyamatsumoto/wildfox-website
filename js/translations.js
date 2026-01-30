@@ -73,7 +73,7 @@ const translations = {
         desc: "Deep knowledge of Hokkaido's ecosystems, seasons, and best viewing locations."
       },
       mission3: {
-        title: "Personal Touch",
+        title: "Small Groups",
         desc: "Small, private tours ensure personalized attention and flexibility."
       },
       guide: {
@@ -194,7 +194,7 @@ const translations = {
             description: "Deep knowledge of Hokkaido's ecosystems, seasons, and best viewing locations."
           },
           {
-            title: "Personal Touch",
+            title: "Small Groups",
             description: "Small, private tours ensure personalized attention and flexibility."
           }
         ]
@@ -334,7 +334,7 @@ const translations = {
         desc: "對北海道生態系統、季節和最佳觀賞地點的深入了解。"
       },
       mission3: {
-        title: "個人化服務",
+        title: "小團體制",
         desc: "小型私人行程確保個人化關注和彈性。"
       },
       guide: {
@@ -455,7 +455,7 @@ const translations = {
             description: "對北海道生態系統、季節和最佳觀賞地點的深入了解。"
           },
           {
-            title: "個人化服務",
+            title: "小團體制",
             description: "小型私人行程確保個人化關注和彈性。"
           }
         ]
@@ -595,7 +595,7 @@ const translations = {
         desc: "北海道の生態系、季節、最適な観察場所についての深い知識。"
       },
       mission3: {
-        title: "パーソナルタッチ",
+        title: "少人数制",
         desc: "少人数のプライベートツアーで、きめ細かな対応と柔軟性を確保。"
       },
       guide: {
@@ -716,7 +716,7 @@ const translations = {
             description: "北海道の生態系、季節、最適な観察場所についての深い知識。"
           },
           {
-            title: "パーソナルタッチ",
+            title: "少人数制",
             description: "少人数のプライベートツアーで、きめ細かな対応と柔軟性を確保。"
           }
         ]
