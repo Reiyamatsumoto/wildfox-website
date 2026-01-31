@@ -23,14 +23,36 @@ body {
   color: var(--text-dark);
 }
 
-/* Header - minimal */
+/* Header - minimal white */
 .header {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header .nav-link,
+.header .social-icon {
+  color: var(--text-dark);
+}
+
+.header .nav-link:hover,
+.header .nav-link.active {
+  color: var(--accent-color);
 }
 
 .header.scrolled {
-  background-color: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 1px 0 var(--border-color);
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header.scrolled .nav-link,
+.header.scrolled .social-icon {
+  color: var(--text-dark);
+}
+
+.header.scrolled .nav-link:hover,
+.header.scrolled .nav-link.active {
+  color: var(--accent-color);
 }
 
 .logo-img {
@@ -847,12 +869,22 @@ body {
   background-color: var(--text-dark);
 }
 
+.header .lang-btn {
+  color: var(--text-dark);
+}
+
+.header .lang-btn.active {
+  background-color: var(--text-dark);
+  color: white;
+}
+
 .header.scrolled .lang-btn {
   color: var(--text-dark);
 }
 
 .header.scrolled .lang-btn.active {
-  color: var(--text-light);
+  background-color: var(--text-dark);
+  color: white;
 }
 
 /* Responsive adjustments */
