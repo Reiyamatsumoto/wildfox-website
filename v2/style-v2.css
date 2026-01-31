@@ -33,6 +33,14 @@ body {
   box-shadow: 0 1px 0 var(--border-color);
 }
 
+.logo-img {
+  height: 75px;
+}
+
+.footer-brand .logo-img {
+  height: 90px;
+}
+
 .logo-text {
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -187,6 +195,11 @@ body {
   font-weight: 400;
 }
 
+.about-label i {
+  color: #ef4444;
+  margin-right: 0.5rem;
+}
+
 .about-intro h2 {
   font-size: clamp(2rem, 4vw, 2.8rem);
   font-weight: 500;
@@ -203,50 +216,50 @@ body {
   font-weight: 300;
 }
 
-/* Stats with Guide Layout */
-.stats-with-guide {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
   margin-bottom: 5rem;
   padding: 4rem 0;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
 
-/* Stats Grid */
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem 3rem;
-  flex: 1;
-}
-
-/* Guide Portrait */
-.guide-portrait {
-  flex-shrink: 0;
-  text-align: center;
-}
-
-.guide-portrait img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center top;
-}
-
-.guide-name {
-  margin-top: 1rem;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  font-weight: 400;
-}
-
 .stat-item {
   text-align: center;
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.stat-item:nth-child(1) .stat-icon {
+  background-color: #e8f0fe;
+  color: #4285f4;
+}
+
+.stat-item:nth-child(2) .stat-icon {
+  background-color: #fef3e8;
+  color: #f59e0b;
+}
+
+.stat-item:nth-child(3) .stat-icon {
+  background-color: #e8fef0;
+  color: #10b981;
+}
+
+.stat-item:nth-child(4) .stat-icon {
+  background-color: #f3e8fe;
+  color: #8b5cf6;
 }
 
 .stat-number {
@@ -307,41 +320,15 @@ body {
 }
 
 /* Stats Grid Responsive */
-@media (max-width: 992px) {
-  .stats-with-guide {
-    flex-direction: column-reverse;
-    gap: 3rem;
-  }
-
-  .stats-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    width: 100%;
-  }
-
-  .guide-portrait img {
-    width: 160px;
-    height: 160px;
-  }
-}
-
 @media (max-width: 768px) {
-  .stats-with-guide {
-    padding: 3rem 0;
-  }
-
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem 1.5rem;
+    padding: 3rem 0;
   }
 
   .stat-number {
     font-size: 2.5rem;
-  }
-
-  .guide-portrait img {
-    width: 140px;
-    height: 140px;
   }
 
   .about-photo-grid {
@@ -369,6 +356,7 @@ body {
 /* Tours section */
 .tours-section {
   background-color: var(--bg-gray);
+  padding-bottom: 5rem;
 }
 
 /* Tour cards - clean */
@@ -482,7 +470,7 @@ body {
 /* Wildlife section */
 .wildlife-section {
   background-color: var(--bg-white);
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 
 .wildlife-section .section-title {
@@ -528,12 +516,29 @@ body {
 }
 
 .mission-icon {
-  background-color: var(--bg-gray);
-  color: var(--text-dark);
   width: 50px;
   height: 50px;
   font-size: 1.1rem;
-  border-radius: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.mission-card:nth-child(1) .mission-icon {
+  background-color: #fef2f2;
+  color: #ef4444;
+}
+
+.mission-card:nth-child(2) .mission-icon {
+  background-color: #ecfdf5;
+  color: #10b981;
+}
+
+.mission-card:nth-child(3) .mission-icon {
+  background-color: #fdf4ff;
+  color: #d946ef;
 }
 
 .mission-card h4 {
@@ -554,8 +559,8 @@ body {
 .guide-section {
   background-color: var(--bg-gray);
   border-top: none;
-  padding: 5rem 0;
-  margin-top: 5rem;
+  padding: 4rem 0;
+  margin-top: 3rem;
 }
 
 .guide-photo img {
@@ -606,7 +611,7 @@ body {
 
 /* CTA section */
 .cta-section {
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 
 .cta-overlay {
@@ -627,13 +632,39 @@ body {
 /* Contact section */
 .contact-section {
   background-color: var(--bg-white);
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 
 .contact-info h2 {
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.05em;
+}
+
+/* Contact icons with colors */
+.contact-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.contact-item:nth-child(1) .contact-icon {
+  background-color: #e8f0fe;
+  color: #4285f4;
+}
+
+.contact-item:nth-child(2) .contact-icon {
+  background-color: #fef2f2;
+  color: #ea4335;
+}
+
+.contact-item:nth-child(3) .contact-icon {
+  background-color: #fef3e8;
+  color: #f59e0b;
 }
 
 .contact-form-wrapper {
@@ -716,14 +747,34 @@ body {
 }
 
 .footer-social a {
-  background-color: var(--bg-gray);
-  color: var(--text-dark);
-  border-radius: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-social a:hover {
-  background-color: var(--text-dark);
-  color: var(--text-light);
+/* Instagram */
+.footer-social a:nth-child(1) {
+  background-color: #fdf2f8;
+  color: #e1306c;
+}
+
+.footer-social a:nth-child(1):hover {
+  background-color: #e1306c;
+  color: #fff;
+}
+
+/* Facebook */
+.footer-social a:nth-child(2) {
+  background-color: #e8f0fe;
+  color: #1877f2;
+}
+
+.footer-social a:nth-child(2):hover {
+  background-color: #1877f2;
+  color: #fff;
 }
 
 .footer-bottom {
