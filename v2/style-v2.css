@@ -125,17 +125,18 @@ body {
   border-radius: 0;
 }
 
-/* Sections - lots of whitespace */
+/* Sections - balanced whitespace */
 .section {
-  padding: 8rem 0;
+  padding: 6rem 0;
 }
 
 .about-preview {
   background-color: var(--bg-white);
+  padding: 5rem 0;
 }
 
 .section-header {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .section-title {
@@ -183,7 +184,7 @@ body {
   grid-template-columns: none;
   text-align: center;
   max-width: 700px;
-  margin: 0 auto 5rem;
+  margin: 0 auto 3rem;
 }
 
 .about-label {
@@ -221,8 +222,8 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-bottom: 5rem;
-  padding: 4rem 0;
+  margin-bottom: 3rem;
+  padding: 3rem 0;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
@@ -323,12 +324,13 @@ body {
 @media (max-width: 768px) {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 1.5rem;
-    padding: 3rem 0;
+    gap: 1.5rem 1rem;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
   }
 
   .stat-number {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .about-photo-grid {
@@ -337,7 +339,15 @@ body {
   }
 
   .about-intro {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.5rem;
+  }
+
+  .mission-card {
+    padding: 1.5rem 1rem;
   }
 }
 
@@ -356,7 +366,7 @@ body {
 /* Tours section */
 .tours-section {
   background-color: var(--bg-gray);
-  padding-bottom: 5rem;
+  padding: 5rem 0;
 }
 
 /* Tour cards - clean */
@@ -470,7 +480,7 @@ body {
 /* Wildlife section */
 .wildlife-section {
   background-color: var(--bg-white);
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .wildlife-section .section-title {
@@ -506,7 +516,7 @@ body {
   background-color: var(--bg-white);
   border-radius: 0;
   border: 1px solid var(--border-color);
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
 }
 
 .mission-card:hover {
@@ -559,8 +569,8 @@ body {
 .guide-section {
   background-color: var(--bg-gray);
   border-top: none;
-  padding: 4rem 0;
-  margin-top: 3rem;
+  padding: 3rem 0;
+  margin-top: 2rem;
 }
 
 .guide-photo img {
@@ -611,7 +621,7 @@ body {
 
 /* CTA section */
 .cta-section {
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
 
 .cta-overlay {
@@ -632,7 +642,7 @@ body {
 /* Contact section */
 .contact-section {
   background-color: var(--bg-white);
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .contact-info h2 {
@@ -672,7 +682,7 @@ body {
   border-radius: 0;
   border: none;
   box-shadow: none;
-  padding: 3rem;
+  padding: 2.5rem;
 }
 
 .contact-form-wrapper h3 {
@@ -705,7 +715,7 @@ body {
 /* Instagram section */
 .instagram-section {
   background-color: var(--bg-gray);
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .instagram-header h3 {
@@ -724,7 +734,7 @@ body {
   background-color: var(--bg-white);
   color: var(--text-dark);
   border-top: 1px solid var(--border-color);
-  padding: 5rem 0 3rem;
+  padding: 4rem 0 2rem;
 }
 
 .footer-title {
@@ -779,8 +789,8 @@ body {
 
 .footer-bottom {
   border-top: 1px solid var(--border-color);
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .footer-bottom p {
@@ -828,7 +838,20 @@ body {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .section {
-    padding: 5rem 0;
+    padding: 4rem 0;
+  }
+
+  .about-preview {
+    padding: 3rem 0;
+  }
+
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero-slide img {
+    object-fit: cover;
+    object-position: center center;
   }
 
   .hero-title {
@@ -838,5 +861,25 @@ body {
   .hero-subtitle {
     font-size: 0.8rem;
     letter-spacing: 0.15em;
+  }
+
+  .tours-section,
+  .wildlife-section,
+  .contact-section,
+  .instagram-section {
+    padding: 3rem 0;
+  }
+
+  .guide-section {
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+  }
+
+  .cta-section {
+    padding: 4rem 0;
+  }
+
+  .footer {
+    padding: 3rem 0 1.5rem;
   }
 }
