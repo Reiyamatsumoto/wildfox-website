@@ -487,6 +487,26 @@ body {
   color: var(--text-dark);
 }
 
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #fdf2f8;
+  color: #e1306c;
+  border-radius: 50%;
+  margin-left: 0.75rem;
+  font-size: 1rem;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.instagram-link:hover {
+  background-color: #e1306c;
+  color: #fff;
+}
+
 .wildlife-section .section-subtitle {
   color: var(--text-muted);
 }
