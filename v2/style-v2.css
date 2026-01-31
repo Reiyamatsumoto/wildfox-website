@@ -849,9 +849,14 @@ body {
     min-height: 100vh;
   }
 
+  /* 1枚目だけ左寄せ、他は中央 */
   .hero-slide img {
     object-fit: cover;
     object-position: center center;
+  }
+
+  .hero-slide:first-child img {
+    object-position: 25% center;
   }
 
   .hero-title {
