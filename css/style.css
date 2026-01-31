@@ -1373,6 +1373,10 @@ select.form-control {
     font-size: 2.5rem;
   }
 
+  .hero-slide img {
+    object-position: 30% center;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
