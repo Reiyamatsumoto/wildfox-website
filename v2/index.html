@@ -35,6 +35,7 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="style-v2.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
@@ -89,7 +90,7 @@
     <div class="hero-slider">
       <!-- Slide 1 - Main (Brown Bear) -->
       <div class="hero-slide active">
-        <img src="../images/web広報用/DSC_3639.jpg" alt="Steller's sea eagle on drift ice at sunset">
+        <img src="../images/hero-main.jpg" alt="Steller's sea eagle on drift ice at sunset">
       </div>
       <!-- Slide 2 - Wildlife -->
       <div class="hero-slide">
@@ -124,24 +125,56 @@
   </section>
 
   <!-- ========================================
-       ABOUT PREVIEW
+       ABOUT PREVIEW - Stats Style
        ======================================== -->
   <section class="section about-preview">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-image animate-on-scroll">
-          <img src="../images/web広報用/DSC_7053.jpg" alt="Sika deer with mountain backdrop in Hokkaido" loading="lazy">
-        </div>
-        <div class="about-text animate-on-scroll">
-          <h2 data-i18n="aboutPreview.title">Experience the Untamed Beauty of Hokkaido</h2>
-          <p data-i18n="aboutPreview.description">WILD FOX offers exclusive private tours led by experienced local guides who know Hokkaido's wilderness intimately. From the majestic red-crowned cranes to the elusive Blakiston's fish owl, we create unforgettable wildlife encounters tailored to your interests.</p>
-          <div class="about-features">
-            <span class="feature-tag"><i class="fas fa-user-friends"></i> <span data-i18n="aboutPreview.features.private">Private Tours</span></span>
-            <span class="feature-tag"><i class="fas fa-binoculars"></i> <span data-i18n="aboutPreview.features.expert">Expert Guides</span></span>
-            <span class="feature-tag"><i class="fas fa-paw"></i> <span data-i18n="aboutPreview.features.wildlife">Wildlife Focus</span></span>
-            <span class="feature-tag"><i class="fas fa-map-marker-alt"></i> <span data-i18n="aboutPreview.features.local">Local Experience</span></span>
+      <div class="about-intro animate-on-scroll">
+        <p class="about-label">About WILD FOX</p>
+        <h2>Your Gateway to<br>Hokkaido's Wilderness</h2>
+        <p class="about-description">WILD FOX offers exclusive private tours led by experienced local guides who know Hokkaido's wilderness intimately. From the majestic red-crowned cranes to the elusive Blakiston's fish owl, we create unforgettable wildlife encounters tailored to your interests.</p>
+      </div>
+
+      <!-- Stats with Guide -->
+      <div class="stats-with-guide animate-on-scroll">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">4.9</span>
+            <span class="stat-label">Google Rating</span>
+            <span class="stat-detail"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
           </div>
-          <a href="#about" class="btn btn-dark mt-2" data-section="about" data-i18n="aboutPreview.btnLearnMore">Learn More About Us</a>
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Years of Experience</span>
+            <span class="stat-detail">Since 2014</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5,000+</span>
+            <span class="stat-label">Guests Guided</span>
+            <span class="stat-detail">From 40+ Countries</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Private Tours</span>
+            <span class="stat-detail">Personalized Experience</span>
+          </div>
+        </div>
+        <div class="guide-portrait">
+          <img src="../images/IMG_2247.jpg" alt="Your Guide" loading="lazy">
+          <p class="guide-name">Your Guide</p>
+        </div>
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="about-photo-grid animate-on-scroll">
+        <div class="about-photo-item">
+          <img src="../images/web広報用/DSC_7053.jpg" alt="Sika deer with mountain backdrop" loading="lazy">
+        </div>
+        <div class="about-photo-item">
+          <img src="../images/web広報用/DSC_2752.jpg" alt="Red-crowned cranes" loading="lazy">
+        </div>
+        <div class="about-photo-item">
+          <img src="../images/web広報用/DSC_4544.jpg" alt="Steller's sea eagle" loading="lazy">
         </div>
       </div>
     </div>
@@ -166,6 +199,8 @@
           </div>
           <div class="tour-content">
             <h3 class="tour-title" data-i18n="tours.winter.title">Winter Wildlife Safari</h3>
+            <p class="tour-price">¥150,000 ~ ¥500,000</p>
+            <p class="tour-price-note">per person / 2-5 days</p>
             <p class="tour-description" data-i18n="tours.winter.description">Witness the spectacular winter wildlife of Hokkaido, including red-crowned cranes dancing on snow, Steller's sea eagles hunting on drift ice, and the enchanting whooper swans.</p>
             <div class="tour-highlights">
               <span class="highlight-tag">Red-crowned Cranes</span>
@@ -188,6 +223,8 @@
           </div>
           <div class="tour-content">
             <h3 class="tour-title" data-i18n="tours.summer.title">Summer Nature Expedition</h3>
+            <p class="tour-price">¥80,000 ~ ¥300,000</p>
+            <p class="tour-price-note">per person / 1-4 days</p>
             <p class="tour-description" data-i18n="tours.summer.description">Explore the lush forests and wetlands of Hokkaido in summer. Spot brown bears, rare bird species, wildflowers in bloom, and experience the pristine nature at its finest.</p>
             <div class="tour-highlights">
               <span class="highlight-tag">Brown Bears</span>
@@ -373,7 +410,7 @@
               <div class="contact-icon"><i class="fas fa-envelope"></i></div>
               <div>
                 <strong data-i18n="contactPage.info.email">Email</strong>
-                <a href="mailto:info@wildfoxtour.com">info@wildfoxtour.com</a>
+                <a href="mailto:info@xxxxxxx.com">info@xxxxxxx.com</a>
               </div>
             </div>
             <div class="contact-item">
@@ -532,7 +569,7 @@
 
         <div class="footer-contact">
           <h4 class="footer-title" data-i18n="footer.contactTitle">Contact</h4>
-          <p><i class="fas fa-envelope"></i> info@wildfoxtour.com</p>
+          <p><i class="fas fa-envelope"></i> info@xxxxxxx.com</p>
           <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.location">Hokkaido, Japan</span></p>
         </div>
       </div>

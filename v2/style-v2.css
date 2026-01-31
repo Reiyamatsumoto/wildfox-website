@@ -1,0 +1,791 @@
+/* ========================================
+   WILD FOX v2 - Minimal White Style
+   Clean, spacious, photo-focused
+   ======================================== */
+
+/* Override CSS Variables */
+:root {
+  --primary-color: #2c2c2c;
+  --primary-dark: #1a1a1a;
+  --accent-color: #c9a45c;
+  --accent-hover: #b8944d;
+  --text-dark: #1a1a1a;
+  --text-light: #ffffff;
+  --text-muted: #888888;
+  --bg-white: #ffffff;
+  --bg-gray: #fafafa;
+  --border-color: #eaeaea;
+}
+
+/* Clean white body */
+body {
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+}
+
+/* Header - minimal */
+.header {
+  padding: 1.5rem 0;
+}
+
+.header.scrolled {
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 1px 0 var(--border-color);
+}
+
+.logo-text {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nav-link::after {
+  background-color: var(--text-dark);
+  height: 1px;
+}
+
+/* Hero - large photo focus */
+.hero {
+  height: 100vh;
+  min-height: 700px;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.05) 40%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+.hero-title {
+  font-size: clamp(3rem, 7vw, 5rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-shadow: none;
+}
+
+.hero-subtitle {
+  font-weight: 300;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+/* Buttons - minimal */
+.btn {
+  border-radius: 0;
+  padding: 1rem 2.5rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-outline {
+  border: 1px solid var(--text-light);
+  border-radius: 0;
+}
+
+.btn-outline:hover {
+  background-color: var(--text-light);
+  color: var(--text-dark);
+}
+
+.btn-dark {
+  background-color: var(--text-dark);
+  border-radius: 0;
+}
+
+/* Sections - lots of whitespace */
+.section {
+  padding: 8rem 0;
+}
+
+.about-preview {
+  background-color: var(--bg-white);
+}
+
+.section-header {
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dark);
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+/* About section */
+.about-grid {
+  gap: 6rem;
+}
+
+.about-image img {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 2rem;
+}
+
+.about-text p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 300;
+}
+
+/* About Intro - Stats Style */
+.about-intro {
+  display: block;
+  grid-template-columns: none;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 5rem;
+}
+
+.about-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.about-intro h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+.about-description {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 2;
+  font-weight: 300;
+}
+
+/* Stats with Guide Layout */
+.stats-with-guide {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+  padding: 4rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 3rem;
+  flex: 1;
+}
+
+/* Guide Portrait */
+.guide-portrait {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.guide-portrait img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.guide-name {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 500;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.stat-detail {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.stat-detail i {
+  color: var(--accent-color);
+  font-size: 0.7rem;
+  margin: 0 0.1rem;
+}
+
+/* About Photo Grid */
+.about-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.about-photo-item {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.about-photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.about-photo-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Stats Grid Responsive */
+@media (max-width: 992px) {
+  .stats-with-guide {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .guide-portrait img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-with-guide {
+    padding: 3rem 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .guide-portrait img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .about-photo-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about-intro {
+    margin-bottom: 3rem;
+  }
+}
+
+/* Feature tags */
+.feature-tag {
+  background-color: transparent;
+  color: var(--text-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Tours section */
+.tours-section {
+  background-color: var(--bg-gray);
+}
+
+/* Tour cards - clean */
+.tour-card {
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  background-color: var(--bg-white);
+}
+
+.tour-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.tour-image {
+  height: 280px;
+}
+
+.tour-badge {
+  border-radius: 0;
+  background-color: var(--text-dark);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}
+
+.tour-content {
+  padding: 2rem;
+}
+
+.tour-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* Tour pricing */
+.tour-price {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.02em;
+}
+
+.tour-price-note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.tour-description {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.highlight-tag {
+  background-color: var(--bg-gray);
+  color: var(--text-dark);
+  border-radius: 0;
+  border: none;
+  font-size: 0.7rem;
+  padding: 0.4rem 0.8rem;
+  letter-spacing: 0.03em;
+}
+
+.tour-footer {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.tour-duration {
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+}
+
+.tour-link {
+  color: var(--text-dark);
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.tour-link:hover {
+  color: var(--accent-color);
+}
+
+/* Tour details note */
+.tour-details-note {
+  background-color: var(--bg-white);
+  border-radius: 0;
+  border-left: 2px solid var(--text-dark);
+  padding: 1.5rem 2rem;
+}
+
+.tour-details-note p {
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
+/* Wildlife section */
+.wildlife-section {
+  background-color: var(--bg-white);
+  padding: 8rem 0;
+}
+
+.wildlife-section .section-title {
+  color: var(--text-dark);
+}
+
+.wildlife-section .section-subtitle {
+  color: var(--text-muted);
+}
+
+.wildlife-item {
+  border-radius: 0;
+}
+
+.wildlife-overlay {
+  background: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.7));
+  opacity: 0;
+}
+
+.wildlife-item:hover .wildlife-overlay {
+  opacity: 1;
+}
+
+.wildlife-name {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Mission cards */
+.mission-card {
+  background-color: var(--bg-white);
+  border-radius: 0;
+  border: 1px solid var(--border-color);
+  padding: 3rem 2rem;
+}
+
+.mission-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transform: none;
+  border-color: var(--text-dark);
+}
+
+.mission-icon {
+  background-color: var(--bg-gray);
+  color: var(--text-dark);
+  width: 50px;
+  height: 50px;
+  font-size: 1.1rem;
+  border-radius: 0;
+}
+
+.mission-card h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.mission-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+/* Guide section */
+.guide-section {
+  background-color: var(--bg-gray);
+  border-top: none;
+  padding: 5rem 0;
+  margin-top: 5rem;
+}
+
+.guide-photo img {
+  border-radius: 0;
+}
+
+.guide-badge {
+  background-color: var(--text-dark);
+  border-radius: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.guide-info h3 {
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.guide-title {
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+.guide-bio {
+  font-weight: 300;
+  line-height: 2;
+}
+
+.credential-item {
+  background-color: var(--bg-white);
+  border-radius: 0;
+  border: 1px solid var(--border-color);
+}
+
+.credential-icon {
+  background-color: var(--text-dark);
+  border-radius: 0;
+  width: 36px;
+  height: 36px;
+}
+
+.credential-item span {
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+/* CTA section */
+.cta-section {
+  padding: 10rem 0;
+}
+
+.cta-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.cta-content p {
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+/* Contact section */
+.contact-section {
+  background-color: var(--bg-white);
+  padding: 8rem 0;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.contact-form-wrapper {
+  background-color: var(--bg-gray);
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  padding: 3rem;
+}
+
+.contact-form-wrapper h3 {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.form-control {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+.form-control:focus {
+  border-color: var(--text-dark);
+  box-shadow: none;
+}
+
+/* Instagram section */
+.instagram-section {
+  background-color: var(--bg-gray);
+  padding: 5rem 0;
+}
+
+.instagram-header h3 {
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.instagram-item {
+  border-radius: 0;
+}
+
+/* Footer - minimal */
+.footer {
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  border-top: 1px solid var(--border-color);
+  padding: 5rem 0 3rem;
+}
+
+.footer-title {
+  color: var(--text-dark);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.footer-brand p,
+.footer-links a,
+.footer-contact p {
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+.footer-links a:hover {
+  color: var(--text-dark);
+}
+
+.footer-social a {
+  background-color: var(--bg-gray);
+  color: var(--text-dark);
+  border-radius: 0;
+}
+
+.footer-social a:hover {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border-color);
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.footer-bottom p {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+/* Slider dots */
+.slider-dot {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 8px;
+  height: 8px;
+  border-radius: 0;
+}
+
+.slider-dot.active {
+  background-color: var(--text-light);
+}
+
+/* Language switch */
+.lang-switch {
+  background-color: transparent;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.6rem;
+}
+
+.lang-btn.active {
+  background-color: var(--text-dark);
+}
+
+.header.scrolled .lang-btn {
+  color: var(--text-dark);
+}
+
+.header.scrolled .lang-btn.active {
+  color: var(--text-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 5rem 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+  }
+}
